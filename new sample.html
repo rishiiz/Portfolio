@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aryan Bhosale - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #sidebar {
+      min-height: 100vh;
+      background: #1f1f1f;
+      padding: 30px 20px;
+      position: fixed;
+      width: 250px;
+      color: #ccc;
+    }
+
+    #sidebar h2 {
+      color: #0dcaf0;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    #sidebar nav a {
+      display: block;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      color: #ccc;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    #sidebar nav a:hover, #sidebar nav a.active {
+      background-color: #0dcaf0;
+      color: #121212;
+    }
+
+    #sidebar .profile img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    main {
+      margin-left: 270px;
+      padding: 40px 30px;
+    }
+
+    h2.section-title {
+      border-bottom: 3px solid #0dcaf0;
+      padding-bottom: 6px;
+      margin-bottom: 25px;
+      color: #0dcaf0;
+    }
+
+    .card {
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px #0dcaf0;
+    }
+
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .btn-light-custom {
+      background: #0dcaf0;
+      color: #121212;
+      border-radius: 30px;
+      border: none;
+    }
+
+    .btn-light-custom:hover {
+      background: #0ab8d5;
+      color: #fff;
+    }
+
+    footer {
+      margin-left: 270px;
+      padding: 20px 30px;
+      text-align: center;
+      color: #bbb;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        padding: 20px 10px;
+      }
+
+      main, footer {
+        margin-left: 0;
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <aside id="sidebar">
+    <div class="d-flex alignitems-center mb-4 profile">
+      <img src="C:\Users\Dell\Downloads\doctxx.jpg" alt="Aryan Bhosale">
+      <h2>Aryan Bhosale</h2>
+    </div>
+    <nav>
+      <a href="#about" class="active">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>Hi, I’m Aryan Bhosale — a passionate web developer and programmer dedicated to crafting clean, efficient, and beautiful digital experiences.</p>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 bg-dark text-light">
+            <h5>Diploma in Information Technology</h5>
+            <p>Jayawantrao Sawant Polytechnic, Pune<br><strong>2023 - 2026</strong></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 bg-dark text-light">
+            <h5>Secondary School Certificate (SSC)</h5>
+            <p>English High School, Akola<br><strong>2022 - 2023</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-3">
+          <div class="card p-3 text-center bg-dark text-light">
+            <div>🐍</div>
+            <h5>Python</h5>
+            <p>Clean, readable, and versatile programming language for many domains</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card p-3 text-center bg-dark text-light">
+            <div>☕</div>
+            <h5>Java</h5>
+            <p>Object-oriented programming with robust performance and scalability</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card p-3 text-center bg-dark text-light">
+            <div>✨</div>
+            <h5>HTML</h5>
+            <p>Semantic markup for structuring modern web pages and applications</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card p-3 text-center bg-dark text-light">
+            <div>🎨</div>
+            <h5>CSS</h5>
+            <p>Styling with responsive layouts, animations, and modern CSS techniques</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 bg-dark text-light">
+            <img src="https://numbertracker360.com/_nuxt/be-calm-1440.Cr5kBJ0G.webp" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Phone No. Location Tracker</h5>
+              <p class="card-text">Responsive website built with Python and HTML.</p>
+              <a href="#" class="btn btn-light-custom">View Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="pt-5">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="profession" class="form-label">Profession</label>
+          <input type="text" class="form-control" id="profession" placeholder="Profession" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone No.</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Phone No." required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your email id" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="What can I do for you?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light-custom">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center text-light p-3 bg-dark">
+    <p>Visitor Count:
+      <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=page&initCount=0" alt="web counter">
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
